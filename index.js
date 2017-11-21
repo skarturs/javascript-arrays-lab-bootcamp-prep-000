@@ -12,3 +12,8 @@ function destructivelyPrependKitten() {
   kittens.unshift(kakis2);
   return kittens;
 }
+
+function destructivelyRemoveLastKitten() {
+  kittens.shift();
+  return kittens;
+}

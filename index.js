@@ -29,9 +29,10 @@ function removeLastKitten(){
   return kittens.slice(0, kittens.length - 1);
 }
 
-function appendKitten(){
- var newArray = []
- var kittens = kittens.concat(newArray);
- kittens.push("Broom")
- return kittens
+function appendKitten(name){
+  var newArray = kittens.slice();
+  // or ES6 way
+  // var newArray = [...kittens];
+  newArray.push(name)
+  return newArray
 }

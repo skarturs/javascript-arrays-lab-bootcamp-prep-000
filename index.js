@@ -28,3 +28,10 @@ function removeFirstKitten(){
 function removeLastKitten(){
   return kittens.slice(0, kittens.length - 1);
 }
+
+function appendKitten(){
+ var newArray = []
+ var kittens = kittens.concat(newArray);
+ kittens.push("Broom")
+ return kittens
+}

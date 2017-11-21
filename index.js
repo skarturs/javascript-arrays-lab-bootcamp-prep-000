@@ -36,3 +36,10 @@ function appendKitten(name){
   newArray.push(name)
   return newArray
 }
+function prependKitten(name){
+  var newArray = kittens.slice();
+  // or ES6 way
+  // var newArray = [...kittens];
+  newArray.unshift(name)
+  return newArray
+}
